@@ -38,11 +38,11 @@
 
 #define Q_STEPPER_POS		1
 #define Q_STEPS_TO_GO		2
-#define Q_SENS1_TYPE		4
-#define Q_SENS1_TEMP		5
-#define Q_SENS1_HUM			6
-#define Q_SENS1_DEW			7
-#define Q_COMP_DIFF			8
+#define Q_SENS1_TYPE		3
+#define Q_SENS1_TEMP		4
+#define Q_SENS1_HUM			5
+#define Q_SENS1_DEW			6
+#define Q_COMP_DIFF			7
 
 #define U_MAX_POS			5
 #define U_REVERSED			6
