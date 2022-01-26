@@ -1,0 +1,13 @@
+Before compiling FocuserLink driver install libindi-dev
+# sudo apt-get install libindi-dev
+
+Compile FocuserLink driver
+# git clone https://github.com/astrojolo/focuserlink.git
+# cd focuserlink
+# mkdir build
+# cd build
+# cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+# make
+# sudo make install
+
+DONE

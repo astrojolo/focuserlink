@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<driversList>
+<devGroup group="Focuser">
+        <device label="FocuserLink">
+                <driver name="FocuserLink">indi_focuserlink</driver>
+                <version>0.1</version>
+        </device>
+</devGroup>
+</driversList>
