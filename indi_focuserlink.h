@@ -44,13 +44,13 @@
 #define Q_SENS1_DEW			7
 #define Q_COMP_DIFF			8
 
-#define U_MAX_POS			4
-#define U_REVERSED			5
-#define U_STEPSIZE			6
-#define U_COMPSTEP          7
-#define U_COMPCYCLE         8
-#define U_COMPTRIGGER       9
-#define U_COMPAUTO          10
+#define U_MAX_POS			5
+#define U_REVERSED			6
+#define U_STEPSIZE			7
+#define U_COMPSTEP          8
+#define U_COMPCYCLE         9
+#define U_COMPTRIGGER       10
+#define U_COMPAUTO          11
 
 
 namespace Connection
