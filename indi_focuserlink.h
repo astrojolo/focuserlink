@@ -36,21 +36,21 @@
 #include <indiweatherinterface.h>
 #include <connectionplugins/connectionserial.h>
 
-#define Q_STEPPER_POS		0
-#define Q_STEPS_TO_GO		1
-#define Q_SENS1_TYPE		3
-#define Q_SENS1_TEMP		4
-#define Q_SENS1_HUM			5
-#define Q_SENS1_DEW			6
-#define Q_COMP_DIFF			7
+#define Q_STEPPER_POS		1
+#define Q_STEPS_TO_GO		2
+#define Q_SENS1_TYPE		4
+#define Q_SENS1_TEMP		5
+#define Q_SENS1_HUM			6
+#define Q_SENS1_DEW			7
+#define Q_COMP_DIFF			8
 
-#define U_MAX_POS			3
-#define U_REVERSED			4
-#define U_STEPSIZE			5
-#define U_COMPSTEP          6
-#define U_COMPCYCLE         7
-#define U_COMPTRIGGER       8
-#define U_COMPAUTO          9
+#define U_MAX_POS			4
+#define U_REVERSED			5
+#define U_STEPSIZE			6
+#define U_COMPSTEP          7
+#define U_COMPCYCLE         8
+#define U_COMPTRIGGER       9
+#define U_COMPAUTO          10
 
 
 namespace Connection

@@ -413,6 +413,7 @@ bool FocuserLink::sendCommand(const char *cmd, char *res)
         tcflush(PortFD, TCIOFLUSH);
         sprintf(command, "%s\n", cmd);
         LOGF_DEBUG("CMD %s", command);
+        DEBUGF(INDI::Logger::DBG_SESSION, "CMD %s", command);
         if ((tty_rc = tty_write_string(PortFD, command, &nbytes_written)) != TTY_OK)
             return false;
 
@@ -428,7 +429,7 @@ bool FocuserLink::sendCommand(const char *cmd, char *res)
         tcflush(PortFD, TCIOFLUSH);
         res[nbytes_read - 1] = '\0';
         LOGF_DEBUG("RES %s", res);
-
+        DEBUGF(INDI::Logger::DBG_SESSION, "RES %s", res);
         if (tty_rc != TTY_OK)
         {
             char errorMessage[MAXRBUF];
