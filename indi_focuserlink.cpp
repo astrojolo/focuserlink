@@ -171,14 +171,14 @@ bool FocuserLink::updateProperties()
 
     if (isConnected())
     {
-        defineNumber(&FocusPosMMNP);
+        defineProperty(&FocusPosMMNP);
         FI::updateProperties();
         WI::updateProperties();
-        defineNumber(&FocuserSettingsNP);
-        defineSwitch(&FocuserCompModeSP);
-        defineSwitch(&FocuserManualSP);
-        defineNumber(&CompensationValueNP);
-        defineSwitch(&CompensateNowSP);
+        defineProperty(&FocuserSettingsNP);
+        defineProperty(&FocuserCompModeSP);
+        defineProperty(&FocuserManualSP);
+        defineProperty(&CompensationValueNP);
+        defineProperty(&CompensateNowSP);
     }
     else
     {
@@ -275,7 +275,7 @@ bool FocuserLink::ISNewSwitch(const char *dev, const char *name, ISState *states
             std::string value = "0";
             if (!strcmp(FocuserCompModeS[FS_COMP_AUTO].name, names[0]))
                 value = "1";
-            if (updateSettings("e", "E", E_COMP_AUTO, value.c_str()))
+            if (updateSettings("u", "U", U_COMPAUTO, value.c_str()))
             {
                 FocuserCompModeSP.s = IPS_BUSY;
                 IUUpdateSwitch(&FocuserCompModeSP, states, names, n);
