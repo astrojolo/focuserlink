@@ -7,8 +7,8 @@ To start you need to download and install INDI environment. See [INDI page](http
 Then FocuserLink INDI driver needs to be fetched and installed:
 
 ```
-git clone https://github.com/astrojolo/focuserone.git
-cd focuserone
+git clone https://github.com/astrojolo/focuserlink.git
+cd focuserlink
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=/usr ..
