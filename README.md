@@ -1,25 +1,25 @@
-# indi-focuserone
-indi_focuserone INDI driver supports FocuserOne telescope focuser controller.
+# indi-focuserlink
+indi_focuserlink INDI driver supports FocuserLInk telescope focuser motor.
 
 # Installing INDI server and libraries
 To start you need to download and install INDI environment. See [INDI page](http://indilib.org/download.html) for details. 
 
-Then FocuserOne INDI driver needs to be fetched and installed:
+Then FocuserLink INDI driver needs to be fetched and installed:
 
 ```
 git clone https://github.com/astrojolo/focuserone.git
 cd focuserone
 mkdir build
 cd build
-cmake ..
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
 make
-make install
+sudo make install
 ```
 
-Then indiserver needs to be started with FocuserOne drivers:
+Then indiserver needs to be started with FocuserLink drivers:
 
 ```
-indiserver -v indi_focuserone
+indiserver -v indi_focuserlink
 ```
 
-Now FocuserOne can be used with any software that supports INDI drivers, like KStars with Ekos.
+Now FocuserLink can be used with any software that supports INDI drivers, like KStars with Ekos.
