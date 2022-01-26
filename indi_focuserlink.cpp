@@ -121,7 +121,6 @@ bool FocuserLink::initProperties()
     WI::initProperties(ENVIRONMENT_TAB, ENVIRONMENT_TAB);
 
     addDebugControl();
-    addSimulationControl();
     addConfigurationControl();
 
     serialConnection = new Connection::Serial(this);
